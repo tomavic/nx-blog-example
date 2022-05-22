@@ -8,11 +8,13 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import { CoreModule } from '@enigma/core';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatProgressBarModule, MatCardModule, MatButtonModule, MatDividerModule],
+  imports: [BrowserModule, CoreModule, MatGridListModule, BrowserAnimationsModule, MatProgressBarModule, MatCardModule, MatButtonModule, MatDividerModule],
   providers: [],
   bootstrap: [AppComponent],
 })
